@@ -33,5 +33,13 @@ class Word
         puts "Think of some ways YOU can use #{@word} in every day situations!"
     end
 
-    
+    def display_examples_and_origin
+        puts "#{@origin_prefix}:\n
+        #{@origin}\n"
+        
+        sleep(5)
+
+        puts "\n#{examples_prefix}:\n
+        #{examples}"
+    end
 end
