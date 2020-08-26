@@ -27,5 +27,11 @@ class Scraper
                 word_hash[:pronunciation] = p.css(".otd-item-headword__pronunciation").text.strip
             end
         end
+        word_hash
     end
+
+    def self.all
+        @@dates
+    end
+
 end
