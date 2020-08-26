@@ -24,4 +24,9 @@ class CLI
             n.validate /[a-zA-Z]/
         end
     end
+
+    def scrape_and_make_word_object(chosen_date)
+        word_hash = Scraper.collect_word_object(@chosen_date)
+        @word_of_day = WordPlay.new(word_hash)
+    end
 end
