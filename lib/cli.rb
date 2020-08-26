@@ -17,4 +17,11 @@ class CLI
         display
         start_over
     end
+
+    def greet
+        @name = @@prompt.ask("Welcome to Sencbl! What's your name?\n") do |n| 
+            n.required true
+            n.validate /[a-zA-Z]/
+        end
+    end
 end
