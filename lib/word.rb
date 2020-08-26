@@ -1,4 +1,4 @@
-require "../environment.rb"
+require "../Sencbl/environment.rb"
 
 class Word
 end
