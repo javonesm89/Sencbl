@@ -1,7 +1,7 @@
 # Sencbl
 A word of the day CLI application
 
-Want to check out how the application works? Video demo available here: https://youtu.be/oRKOU9TJC9Q
+Want to check out how the application works? Video demo available here: https://youtu.be/awKBRLxFEF0
 
 # Languages and Libraries
 - Ruby
