@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './lib/sencbl.rb'
+require "./lib/cli"
 
-Sencbl::CLI.new.run
+CLI.new.run
