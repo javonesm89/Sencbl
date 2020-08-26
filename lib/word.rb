@@ -1,6 +1,6 @@
 require "../Sencbl/environment.rb"
 
-class Word
+class WordPlay
     attr_reader :word, :word_class, :define, :origin_prefix, :origin, :examples_prefix, :examples, :chosen_date, :pronunciation
 
     @@words = []
@@ -46,5 +46,5 @@ class Word
     def self.all
         @@words
     end
-    
+
 end

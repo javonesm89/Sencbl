@@ -5,7 +5,7 @@ class Scraper
 
     def self.collect_dates
         url = 'https://www.dictionary.com/e/word-of-the-day/'
-        html = Nokogiri::HTML(open(url)).css(".otd-item-headword")
+        html = Nokogiri::HTML(URI.open(url)).css(".otd-item-headword")
         html.css(".otd-item-headword__date").each {|p| @@dates << p.text.strip}
     end
 
@@ -30,8 +30,8 @@ class Scraper
         word_hash
     end
 
-    def self.all
-        @@dates
-    end
+     def self.all
+            @@dates
+        end
 
 end
