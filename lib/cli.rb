@@ -1,4 +1,5 @@
 require "../Sencbl/environment.rb"
+require "./lib/scraper"
 
 class CLI
     attr_accessor  :word_hash, :has_name
@@ -48,3 +49,5 @@ class CLI
        end
     end 
 end
+
+CLI.new.run
