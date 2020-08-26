@@ -21,4 +21,17 @@ class Word
     def save 
         @@words << self
     end
+
+    def display_info
+        puts "For #{@chosen_date}, the word is: 
+        #{@word}, which is a/an #{@word_class}!\n"
+        puts "Pronunciation:
+        #{@pronunciation}\n"
+        puts "Definition:
+        #{@define}\n"
+        sleep(5)
+        puts "Think of some ways YOU can use #{@word} in every day situations!"
+    end
+
+    
 end
