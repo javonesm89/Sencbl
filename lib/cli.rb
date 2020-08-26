@@ -10,9 +10,9 @@ class CLI
     def run
         if !@has_name 
              greet
+             Scraper.collect_dates
              @has_name = true
         end
-        Scraper.collect_dates
         @date_options = Scraper.all
         @chosen_date = @@prompt.select("#{@name}, choose a date for Word of the Day!", @date_options)
         scrape_and_make_word_object(@chosen_date)

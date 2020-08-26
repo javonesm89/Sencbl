@@ -28,10 +28,10 @@ class Scraper
             end
         end
         word_hash
-    end
-
-     def self.all
+    end    
+    
+    def self.all
             @@dates
-        end
+    end
 
 end
