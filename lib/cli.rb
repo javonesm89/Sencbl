@@ -29,4 +29,12 @@ class CLI
         word_hash = Scraper.collect_word_object(@chosen_date)
         @word_of_day = WordPlay.new(word_hash)
     end
+
+      def display
+        @word_of_day.display_info
+        @options = %w(Yes?😎 No?😕)
+        sleep(5)
+        more_info = @@prompt.select("Need help?\n", @options)
+        more_info == "Yes?😎" ? @word_of_day.display_examples_and_origin : (puts "Ok! Add #{@word_of_day.word} to your vocabulary and you'll sound super smart!")
+    end
 end
