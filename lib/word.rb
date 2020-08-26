@@ -42,4 +42,9 @@ class Word
         puts "\n#{examples_prefix}:\n
         #{examples}"
     end
+
+    def self.all
+        @@words
+    end
+    
 end
