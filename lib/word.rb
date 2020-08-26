@@ -29,7 +29,7 @@ class WordPlay
         #{@pronunciation}\n"
         puts "Definition:
         #{@define}\n"
-        sleep(5)
+        sleep(4)
         puts "Think of some ways YOU can use #{@word} in every day situations!"
     end
 
@@ -37,7 +37,7 @@ class WordPlay
         puts "#{@origin_prefix}:\n
         #{@origin}\n"
         
-        sleep(5)
+        sleep(4)
 
         puts "\n#{examples_prefix}:\n
         #{examples}"

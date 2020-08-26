@@ -35,13 +35,13 @@ class CLI
       def display
         @word_of_day.display_info
         @options = %w(Yes?😎 No?😕)
-        sleep(5)
+        sleep(4)
         more_info = @@prompt.select("Need help?\n", @options)
         more_info == "Yes?😎" ? @word_of_day.display_examples_and_origin : (puts "Ok! Add #{@word_of_day.word} to your vocabulary and you'll sound super smart!")
     end
 
     def start_over
-        sleep(5)
+        sleep(4)
        start_game = @@prompt.select("Another word?\n", @options)
        if start_game == "Yes?😎"  
             self.run
@@ -50,5 +50,3 @@ class CLI
        end
     end 
 end
-
-# CLI.new.run

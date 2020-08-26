@@ -18,7 +18,7 @@ class Scraper
             if date == chosen_date
                 word_hash[:chosen_date] = p.css(".otd-item-headword__date").text.strip
                 word_hash[:word] = p.css(".otd-item-headword__word").text.strip
-                word_hash[:word_class] = p.css("span.luna-pos").text.strip
+                word_hash[:word_class] = p.css("span.italic").text.strip
                 word_hash[:define] = p.css(".otd-item-headword__pos p")[1].text.strip
                 word_hash[:origin_prefix] = p.css(".wotd-item-origin__content h2").text.strip
                 word_hash[:origin] = p.css(".wotd-item-origin__content p").text.strip
