@@ -37,4 +37,14 @@ class CLI
         more_info = @@prompt.select("Need help?\n", @options)
         more_info == "Yes?😎" ? @word_of_day.display_examples_and_origin : (puts "Ok! Add #{@word_of_day.word} to your vocabulary and you'll sound super smart!")
     end
+
+    def start_over
+        sleep(5)
+       start_game = @@prompt.select("Another word?\n", @options)
+       if start_game == "Yes?😎"  
+            self.run
+       else
+        (puts "Check back tomorrow for a new word!")
+       end
+    end 
 end
