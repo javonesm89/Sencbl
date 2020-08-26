@@ -13,7 +13,8 @@ class Scraper
         word_hash = {}
         url = 'https://www.dictionary.com/e/word-of-the-day/'
         html = Nokogiri::HTML(open(url))
+        html.css(".otd-item-wrapper-content").each do |p|
+            date = p.css(".otd-item-headword__date").text.strip
+        end
     end
 end
-
-puts Scraper.collect_dates
